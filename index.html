@@ -119,6 +119,25 @@ div.desc {
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.8750070302053!2d-2.2141756228042873!3d53.399175772304616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb2e3bbb7ec61%3A0x361e177f8bb1ab8b!2sAbney%20Hall%20Park!5e0!3m2!1sen!2suk!4v1711105497425!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <p class="w3-opacity">&nbsp;</p>
  
+<script language="JavaScript"> 
+var i = 0; var path = new Array(); 
+
+// LIST OF IMAGES 
+path[0] = "images/bramhallparkgallery.jpg"; 
+path[1] = "images/bruntwoodparkgallery.jpg"; 
+path[2] = "images/chorltonparkgallery.jpg"; 
+path[3] = "images/abneyhallgallery.jpg";
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+</script> 
+<img height="30%" name="slide" src="images/bramhallparkgallery.jpg" width="30%" />
+
 </div>
  
  
